@@ -1,0 +1,6 @@
+{
+  "name": "Monserrate Bistro - Restaurante Bogotá",
+  "description": "Sitio web oficial de Monserrate Bistro en Bogotá. Ofrece reservas online, menú digital interactivo, tienda de pedidos a domicilio y un asistente virtual de IA para atención al cliente.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

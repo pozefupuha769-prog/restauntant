@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-editorial-bg: #0F0F0F;
+  --color-editorial-slate: #1A1A1A;
+  --color-editorial-card: #141414;
+  --color-editorial-dark: #0A0A0A;
+  --color-editorial-cream: #E8E6E1;
+  --color-editorial-gold: #C5A059;
+  --color-editorial-gold-dark: #A9833D;
+  --color-editorial-border: rgba(232, 230, 225, 0.2);
+  --color-editorial-border-light: rgba(232, 230, 225, 0.1);
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Base resets to match Editorial style */
+body {
+  background-color: var(--color-editorial-bg);
+  color: var(--color-editorial-cream);
+  font-family: var(--font-sans);
+}
+
+/* Custom fade-in and premium transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 2px;
+}
